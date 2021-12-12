@@ -3,12 +3,14 @@ import { useState } from "react";
 const AddTask = ({ addTask }) => {
   const [text, setText] = useState("");
   const [day, setDay] = useState("");
+  const [detail, setDetail] = useState("");
 
   const onSubmit = (e) => {
     e.preventDefault();
-    addTask({ text, day, isDone: false });
+    addTask({ text, day, detail, isDone: false });
     setText("");
     setDay("");
+    setDetail("");
     // console.log(text);
     // console.log(day);
   };
@@ -38,6 +40,18 @@ const AddTask = ({ addTask }) => {
           required
           value={day}
           onChange={(e) => setDay(e.target.value)}
+          //   onChange={(e) => console.log(e.target.value)}
+        />
+      </div>
+      <div className="form-control">
+        <label htmlFor="detail">Details</label>
+        <input
+          id="detail"
+          name="detail"
+          type="text"
+          placeholder="Add Details"
+          value={detail}
+          onChange={(e) => setDetail(e.target.value)}
           //   onChange={(e) => console.log(e.target.value)}
         />
       </div>

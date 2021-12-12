@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,22 +7,32 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: bisque;
+  font-family: "Nunito", sans-serif;
+  background: url("https://images.unsplash.com/photo-1564510714747-69c3bc1fab41?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-position: center;
+  background-size: cover;
 }
 
 .container {
-  max-width: 500px;
-  margin: 30px auto;
+  max-width: 400px;
+  margin: 30px 30% 30px 10%;
   overflow: auto;
   min-height: 300px;
   /* border: 1px solid steelblue; */
   padding: 30px;
-  border-radius: 5px;
+  box-shadow: 2px 2px 20px black;
+  border-radius: 5%;
   background-image: linear-gradient(
-    to bottom right,
-    rgb(204, 16, 119),
-    rgb(231, 191, 213)
+    to top,
+    #3f51b1 0%,
+    #5a55ae 13%,
+    #7b5fac 25%,
+    #8f6aae 38%,
+    #a86aa4 50%,
+    #cc6b8e 62%,
+    #f18271 75%,
+    #f3a469 87%,
+    #f7c978 100%
   );
 }
 
@@ -32,6 +42,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  color: #3f51b1;
 }
 
 .btn {
@@ -41,9 +52,9 @@ body {
   border: none;
   padding: 10px 20px;
   margin: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: dotted;
   font-size: 15px;
   font-family: inherit;
 }
@@ -66,18 +77,36 @@ body {
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 2px 2px 3px black;
 }
 
 .done {
-  border-left: 10px solid rgb(102, 18, 77);
+  border-left: 10px solid rgb(255, 0, 0);
+  border-top: 10px solid rgb(255, 0, 0);
   text-decoration: line-through;
-  background-color: darkgrey;
+  background-image: linear-gradient(
+    to top,
+    #3f51b1 0%,
+    #5a55ae 13%,
+    #7b5fac 25%,
+    #8f6aae 38%,
+    #a86aa4 50%,
+    #cc6b8e 62%,
+    #f18271 75%,
+    #f3a469 87%,
+    #f7c978 100%
+  );
 }
 
 .task h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.icon {
+  color: #cc6b8e;
+  transform: rotate(360deg);
 }
 
 .add-form {
@@ -90,6 +119,7 @@ body {
 
 .form-control label {
   display: block;
+  font-size: 20px;
 }
 
 .form-control input {
@@ -97,7 +127,9 @@ body {
   height: 40px;
   margin: 5px;
   padding: 3px 7px;
-  font-size: 17px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
 }
 
 footer {
