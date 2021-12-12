@@ -10,6 +10,7 @@ const Task = ({ task, deleteTask, toggleDone }) => {
       <h3>
         <span style={{ textDecoration: "underline" }}>{task.text}</span>
         <FaTimesCircle
+          className="icon"
           style={{
             fontSize: "24px",
             color: "red",

@@ -20,7 +20,7 @@ body {
   /* border: 1px solid steelblue; */
   padding: 30px;
   box-shadow: 2px 2px 20px black;
-  border-radius: 5%;
+  border-radius: 20px;
   background-image: linear-gradient(
     to top,
     #3f51b1 0%,
@@ -40,7 +40,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #3f51b1;
 }
 
@@ -103,8 +103,21 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.icon {
-  color: #cc6b8e;
+.icon:hover {
+  transition: all 0.3s linear;
+  transform: rotate(360deg);
+}
+
+.logo {
+  display: block;
+  width: 70px;
+  border-radius: 40%;
+  background-color: #f70202;
+  padding: 2px;
+  margin: 5px auto;
+}
+.logo:hover {
+  transition: all 0.3s linear;
   transform: rotate(360deg);
 }
 

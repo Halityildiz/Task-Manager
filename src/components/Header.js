@@ -10,6 +10,11 @@ const Header = ({ title = "Task Tracker", toggleShow, showAddTask }) => {
   };
   return (
     <header className="header">
+      <img
+        src="https://i.pinimg.com/564x/e3/f9/c4/e3f9c42f3b449e72123466082ae3eb18.jpg"
+        alt="Logo"
+        class="logo"
+      />
       <h1>{title}</h1>
       <Button
         handleClick={handleClick}
