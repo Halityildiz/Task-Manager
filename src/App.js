@@ -9,14 +9,14 @@ function App() {
   const [tasks, setTasks] = useState([
     {
       id: 1,
-      text: "Study React Pre-Class Notes",
+      text: "Make your car insurance",
       day: "Dec 12th at 2:30pm",
       detail: "Lorem ipsum dolor sit, amet consectetur  elit.",
       isDone: false,
     },
     {
       id: 2,
-      text: "Feed the Dog",
+      text: "Face-time your friends",
       day: "Dec 13th at 1:30pm",
       detail: "Lorem ipsum dolor sit, amet consectetur optio!",
 
@@ -24,8 +24,15 @@ function App() {
     },
     {
       id: 3,
-      text: "Attend In-Class",
-      day: "Dec 14th at 3:00pm",
+      text: "Sell some unwanted clothes",
+      day: "Apr 22nd at 11:00pm",
+      detail: "Lorem ipsum adipisicing elit. Suscipit, optio!",
+      isDone: false,
+    },
+    {
+      id: 4,
+      text: "Do some exercise in forest",
+      day: "May 07th at 6:00pm",
       detail: "Lorem ipsum adipisicing elit. Suscipit, optio!",
       isDone: false,
     },

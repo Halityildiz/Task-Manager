@@ -8,7 +8,7 @@ const Task = ({ task, deleteTask, toggleDone }) => {
       onDoubleClick={() => toggleDone(task.id)}
     >
       <h3>
-        {task.text}
+        <span style={{ textDecoration: "underline" }}>{task.text}</span>
         <FaTimesCircle
           style={{
             fontSize: "24px",
@@ -17,8 +17,10 @@ const Task = ({ task, deleteTask, toggleDone }) => {
           onClick={() => deleteTask(task.id)}
         />
       </h3>
-      <p>{task.day}</p>
-      <p style={{ color: "blue" }}>{task.detail}</p>
+      <h4>*{task.day}</h4>
+      <p style={{ color: "blue" }}>
+        <span style={{ color: "red" }}>Note: </span> ({task.detail})
+      </p>
     </div>
   );
 };

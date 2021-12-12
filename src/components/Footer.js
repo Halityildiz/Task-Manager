@@ -8,7 +8,11 @@ const Footer = ({ deleteAllTask }) => {
 
   return (
     <div>
-      <button className="btn" onClick={deleteAllTask}>
+      <button
+        className="btn"
+        onClick={deleteAllTask}
+        style={{ display: "block", margin: "10px auto" }}
+      >
         Delete All Task
       </button>
     </div>
